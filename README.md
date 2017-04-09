@@ -1,38 +1,20 @@
-## Welcome to GitHub Pages
-[Assign1](https://github.com/FloatingDreamer/143_Assignment_Prompts/blob/master/Assign1.md)
+Assign 1:
+1. Tokenize
+(a) Write the name of the corpus to stdout.
+(b) Delimit the sentences for each document in the corpus.
+(c) Tokenize the words in each sentence of each document.
+(d) Count the number of total words in the corpus and write the result to stdout.
 
-You can use the [editor on GitHub](https://github.com/FloatingDreamer/143_Assignment_Prompts/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+2. Part-of-Speech
+(a) Apply the default part-of-speech tagger to each tokenized sentence.
+(b) Write a file named CORPUS NAME-pos.txt that has each part-of-speech tagged sentence on a separate line and a blank newline separating documents. Where CORPUS NAME is either fables or blogs. The format of the tagging should be a word-tag pair with a / in between. For example: The/DT boy/NN jumped/VBD ./.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+3. Frequency
+(a) Write the vocabulary size of corpus to stdout. Please note that you should use the lowercased
+word.
+(b) Write the most frequent part-of-speech tag and its frequency to the stdout.
+(c) Find the frequency of each unique word (after lowercasing) using the FreqDist module and write the list in decreasing order to a file named CORPUS NAME-word-freq.txt.
+(d) Find the frequency of each word given its part-of-speech tag. Use a conditional frequency dis- tribution for this (CondFreqDist) where the first item in the pair is the part-of-speech and the second item is the lowercased word. Note, the part-of-speech tagger requires upper- case words and returns the word/tag pair in the inverse order of what we are asking here. Use the tabulate() method of the CondFreqDist class to write the results to a file named CORPUS NAME-pos-word-freq.txt.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/FloatingDreamer/143_Assignment_Prompts/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+4. Similar Words
+(a) For the most frequent word in the NN (nouns), VBD (past-tense verbs), JJ (adjectives) and RB (adverbs) part-of-speech tags, find the most similar words using Text.similar(). Write the output to stdout (this will happen by default).
